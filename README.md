@@ -50,7 +50,7 @@ gcc -O2 vector_mult_sequential.c -o vector_mult_sequential
 ```
 
 **Terminal Output Screenshot:**
-![Sequential Output](../images/seq_output.png)
+![Sequential Output](images/seq_output.png)
 
 ### 2. OpenMP Parallel Implementation (Multiple Threads)
 This program uses the `#pragma omp parallel for` directive to automatically split the 100 million multiplications among multiple threads.
@@ -64,8 +64,8 @@ gcc -O2 -fopenmp vector_mult_openmp.c -o vector_mult_openmp
 ```
 
 **Terminal Output Screenshots:**
-![OpenMP Output 1](../images/omp_output_1.png)
-![OpenMP Output 2](../images/omp_output_2.png)
+![OpenMP Output 1](images/omp_output_1.png)
+![OpenMP Output 2](images/omp_output_2.png)
 
 ---
 
@@ -89,15 +89,15 @@ Here are the visual representations of our performance (generated automatically 
 
 **1. Execution Time vs Threads**  
 As we add more threads, the execution time drops rapidly before flattening out.
-![Execution Time](../graphs/execution_time.png)
+![Execution Time](graphs/execution_time.png)
 
 **2. Speedup vs Threads**  
 The speedup is how many times faster the parallel code is compared to the sequential code.
-![Speedup](../graphs/speedup.png)
+![Speedup](graphs/speedup.png)
 
 **3. Efficiency vs Threads**  
 Efficiency measures how well the threads are utilized. Adding too many threads can reduce efficiency due to overhead.
-![Efficiency](../graphs/efficiency.png)
+![Efficiency](graphs/efficiency.png)
 
 ## 💡 Checkpoint 5: Final Demonstration & Viva Prep
 * **Parallelism Works!** By using OpenMP to divide the work, we achieved a maximum speedup of **~5.85x** using 6 threads!
