@@ -1,0 +1,3 @@
+Due to the massive size of the dataset (100 million elements), the input vectors are generated directly in-memory within the C source code. 
+
+This is an intentional design decision to prevent disk I/O bottlenecks. Reading hundreds of megabytes from a text or CSV file would take significantly longer than the mathematical computation itself, skewing the performance measurements and making it impossible to accurately measure the speedup gained from OpenMP CPU parallelization.
