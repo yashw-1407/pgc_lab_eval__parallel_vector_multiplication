@@ -28,9 +28,10 @@ For the parallel design, we use **OpenMP (Open Multi-Processing)**, which is an 
 ---
 
 ## 👥 Team Members
-* [Add Team Member 1]
-* [Add Team Member 2]
-* [Add Team Member 3]
+* Yashwanth Reddy
+* Abhinav Raj
+* Yash Raj
+* Sushilendr
 
 ---
 
