@@ -1,6 +1,6 @@
 # Parallel Vector Multiplication using OpenMP
 
-## 🎯 Checkpoint 1: Problem Definition & Design
+## Checkpoint 1: Problem Definition & Design
 
 ### Problem Definition
 In high-performance computing, mathematical operations on large datasets are often the bottleneck for performance. In this mini-project, we are tasked with performing **Parallel Vector Multiplication**. 
@@ -27,7 +27,7 @@ For the parallel design, we use **OpenMP (Open Multi-Processing)**, which is an 
 
 ---
 
-## 👥 Team Members
+## Team Members
 * Yashwanth Reddy
 * Abhinav Raj
 * Yash Raj
@@ -35,7 +35,7 @@ For the parallel design, we use **OpenMP (Open Multi-Processing)**, which is an 
 
 ---
 
-## 🛠️ Prerequisites & Environment Setup
+## Prerequisites & Environment Setup
 To reproduce this experiment, the following environment was used:
 * **Operating System**: Windows 10/11 running **WSL2 (Windows Subsystem for Linux)** with an **Ubuntu** distribution.
 * **Compiler**: **GCC (GNU Compiler Collection)**, installed via `sudo apt install build-essential`.
@@ -44,7 +44,7 @@ To reproduce this experiment, the following environment was used:
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 * `src/` - Contains the raw C source code (`vector_mult_sequential.c` and `vector_mult_openmp.c`).
 * `data/` - Contains a text file explaining our in-memory data generation strategy (avoiding file I/O overhead).
 * `results/` - Contains our raw execution times stored in a `.csv` file.
@@ -55,7 +55,7 @@ To reproduce this experiment, the following environment was used:
 
 ---
 
-## 🚀 Checkpoint 2: Working Parallel Implementation
+## Checkpoint 2: Working Parallel Implementation
 
 ### 1. Sequential Baseline (Single Thread)
 This program establishes our baseline execution time. We need to know how long the program takes on a single core so we can calculate how much faster the parallel version is.
@@ -93,7 +93,7 @@ gcc -O2 -fopenmp vector_mult_openmp.c -o vector_mult_openmp
 
 ---
 
-## 📊 Checkpoint 3 & 4: Execution Results, Graphs, and Analysis
+## Checkpoint 3 & 4: Execution Results, Graphs, and Analysis
 
 To thoroughly test our parallel implementation, we ran the OpenMP version multiple times, increasing the number of threads for each execution (1, 2, 4, 6, 8, and 16 threads).
 
@@ -131,7 +131,7 @@ This graph shows how efficiently the CPU cores are being utilized. As we add mor
 
 ---
 
-## 💡 Checkpoint 5: Final Demonstration & Viva Prep
+## Checkpoint 5: Final Demonstration & Viva Prep
 
 Based on the data collected during our experiment, we can draw several critical conclusions about parallel computing and OpenMP:
 
