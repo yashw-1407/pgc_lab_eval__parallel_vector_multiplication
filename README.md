@@ -107,7 +107,7 @@ To thoroughly test our parallel implementation, we ran the OpenMP version multip
 | Threads | Execution Time (seconds) | Speedup (Seq_Time / Par_Time) | Efficiency |
 | :---: | :---: | :---: | :---: |
 | 1 (Sequential) | 0.692445 | 1.00x | 100.0% |
-| 2 | 0.246625 | 2.80x | 140.3% (Hyperthreading anomaly) |
+| 2 | 0.246625 | 2.80x | 140.3% |
 | 4 | 0.126643 | 5.46x | 136.6% |
 | 6 | 0.118263 | 5.85x | 97.5% |
 | 8 | 0.137638 | 5.03x | 62.8% |
